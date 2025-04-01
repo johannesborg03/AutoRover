@@ -8,6 +8,25 @@ To make it easy for you to get started with GitLab, here's a list of recommended
 
 Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
 
+### Clone the repository
+To get a local copy of this repository, use SSH for authentication:
+
+
+git clone git@git.chalmers.se:courses/dit638/students/2025-group-14.git
+cd 2025-group14
+
+### Building the project
+
+
+### Workflow
+We will use feature branching when developing on our project. This means we will create issues where we state the purpose of the issue, acceptance criteria for the issue and requirements. A branch will then be created from that issue and every commit done on that issue/branch will start with "#" and then the number of the issue to link the issue to the correct commit message.
+
+Once a issue is considered done and fulfill the acceptance criterias a merge request will be created where another developer reviews the merge request and accepts it and merges it into main if it is done correctly.
+
+Correct labels will be used for each issue showing the current state of the issue.
+
+A issue template will be used for each issue.
+
 ## Add your files
 
 - [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
