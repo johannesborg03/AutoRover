@@ -18,14 +18,30 @@ cd 2025-group14
 ### Building the project
 
 
-### Workflow
-We will use feature branching when developing on our project. This means we will create issues where we state the purpose of the issue, acceptance criteria for the issue and requirements. A branch will then be created from that issue and every commit done on that issue/branch will start with "#" and then the number of the issue to link the issue to the correct commit message.
+## Workflow
 
-Once a issue is considered done and fulfill the acceptance criterias a merge request will be created where another developer reviews the merge request and accepts it and merges it into main if it is done correctly.
+### Issue Creation  
+For each new feature or fix, we will create an **issue** that includes:  
 
-Correct labels will be used for each issue showing the current state of the issue.
+- **Purpose**: A clear description of what needs to be done.  
+- **Acceptance Criteria**: Conditions that must be met for the issue to be considered complete.  
+- **Requirements**: Any dependencies or prerequisites.  
 
-A issue template will be used for each issue.
+### Branching and Commits  
+- A **feature branch** will be created for each issue.  
+- All commits related to an issue must start with `#<issue_number>` to link them to the corresponding issue.  
+
+### Merge Requests and Code Review  
+Once an issue meets the acceptance criteria:  
+1. A **merge request (MR)** will be created.  
+2. Another team member will review the MR for quality, correctness, and adherence to project standards.  
+3. If approved, the branch will be merged into `main`.  
+
+### Issue Tracking  
+- **Labels** will be used to indicate the current status of each issue.  
+- An **issue template** will be followed to ensure consistency and clarity. This template is available in the ".gitlab" folder.
+
+This workflow ensures **traceability, collaboration, and maintainability** throughout
 
 ## Add your files
 
