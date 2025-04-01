@@ -29,9 +29,6 @@ We encourage open communication and practice empathy regarding group work. If ch
 ---
 
 ## How do you plan to ensure responsible use of LLMs in your project, and how do you transparently and traceably document the use of LLMs? 
-
----
-
 We ensure responsible use of LLMs by restricting them to low-risk, well-defined tasks such as documentation support and data summarization, always with human oversight. To maintain transparency and traceability, we document the model version, purpose. Prompts and outputs are logged and showcased as a source. All interactions with the LLM are clearly indicated.
 
 ---
