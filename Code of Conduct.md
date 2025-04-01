@@ -33,7 +33,7 @@ We ensure responsible use of LLMs by restricting them to low-risk, well-defined 
 
 
 Prompt for Improving Code of Conduct:
-![Alt text](/PromptForCodeOfConduct.png)
+![Alt text](Images/PromptForCodeOfConduct.png)
 ---
 
 _By following this Code of Conduct, we aim to create a collaborative, productive, and respectful work environment!_
