@@ -1,0 +1,32 @@
+# Ignore build directory
+/build/
+build/
+
+# Ignore compiled binaries
+*.o
+*.so
+*.a
+*.exe
+*.out
+
+# Ignore CMake generated files
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+
+# Ignore logs and temporary files
+*.log
+*.tmp
+*.swp
+*.swo
+*.bak
+
+# Ignore editor/IDE-specific files
+.vscode/
+.idea/
+*.code-workspace
+
+# Ignore user-specific settings
+*.DS_Store  # macOS
+Thumbs.db   # Windows
