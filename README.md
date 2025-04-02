@@ -24,9 +24,8 @@ cmake ..
 make  
 
 ### Then to run the project:  
-cd ../      (To go back to the root of the project)  
-cd build  
-./dit639_group14  (Project Name)  
+
+./dit639_group14 4  (Project Name) and a argument for checking prime number, in this case number 4  
 
 ## Workflow
 
