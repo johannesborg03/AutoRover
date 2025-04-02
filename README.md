@@ -41,6 +41,14 @@ g++ -std=c++11 -o runner tests/TestPrimeChecker.cpp src/PrimeChecker.cpp
 In CMakeLists you can add the test so when you re-build the project you can simply use:    
 make test    
 to run all the tests  
+
+### Docker
+
+**We have a Dockerfile to build docker image of our project.**  
+To build a Docker image of our project enter:    
+docker build -t dit639_group14 .    
+And to run it, enter:           
+docker run dit639_group14 4    // (4 is argument for main source file)  
   
 ## Workflow
 
