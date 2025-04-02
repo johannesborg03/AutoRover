@@ -31,11 +31,16 @@ make
   
 **In root of the project:**     
 ./runner    
-    
-If you have added more tests, compile using:  
-g++ -std=c++11 -o runner "path/to/testfile" "path/to/file/that/will/be/tested"  
-**Example:**  
+      
+If you have added more tests, compile using:    
+g++ -std=c++11 -o runner "path/to/testfile" "path/to/file/that/will/be/tested"    
+**Example:**    
 g++ -std=c++11 -o runner tests/TestPrimeChecker.cpp src/PrimeChecker.cpp  
+  
+**To use CMake for tests:**  
+In CMakeLists you can add the test so when you re-build the project you can simply use:    
+make test    
+to run all the tests  
   
 ## Workflow
 
