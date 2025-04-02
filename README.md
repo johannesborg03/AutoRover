@@ -23,6 +23,11 @@ cd build
 cmake ..  
 make  
 
+### Then to run the project:  
+cd ../      (To go back to the root of the project)  
+cd build  
+./dit639_group14  (Project Name)  
+
 ## Workflow
 
 ### Issue Creation  
