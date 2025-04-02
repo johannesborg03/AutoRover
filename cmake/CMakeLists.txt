@@ -7,8 +7,8 @@ project(dit639_group14)
 #set(CMAKE_CXX_EXTENSIONS OFF)
 
 # Define source and include directories
-set(SRC_DIR "${CMAKE_SOURCE_DIR}/src")
-set(INCLUDE_DIR "${CMAKE_SOURCE_DIR}/include")
+#set(SRC_DIR "${CMAKE_SOURCE_DIR}/src")
+#set(INCLUDE_DIR "${CMAKE_SOURCE_DIR}/include")
 
 # Include directories
 include_directories(${INCLUDE_DIR})
