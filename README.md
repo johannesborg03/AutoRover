@@ -15,8 +15,13 @@ To get a local copy of this repository, use SSH for authentication:
 git clone git@git.chalmers.se:courses/dit638/students/2025-group-14.git
 cd 2025-group14
 
-### Building the project
+## Building the project
 
+### How to build the project, do the following in the terminal:
+mkdir build
+cd build
+cmake ..
+make
 
 ## Workflow
 
