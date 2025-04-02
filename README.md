@@ -27,6 +27,11 @@ make
 
 ./dit639_group14 4  (Project Name) and a argument for checking prime number, in this case number 4  
 
+### For running tests  
+
+In root of the project:
+./runner
+
 ## Workflow
 
 ### Issue Creation  
