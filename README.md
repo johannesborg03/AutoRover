@@ -27,11 +27,16 @@ make
 
 ./dit639_group14 4  (Project Name) and a argument for checking prime number, in this case number 4  
 
-### For running tests  
-
-In root of the project:
-./runner
-
+### For running tests     
+  
+**In root of the project:**     
+./runner    
+    
+If you have added more tests, compile using:  
+g++ -std=c++11 -o runner "path/to/testfile" "path/to/file/that/will/be/tested"  
+**Example:**  
+g++ -std=c++11 -o runner tests/TestPrimeChecker.cpp src/PrimeChecker.cpp  
+  
 ## Workflow
 
 ### Issue Creation  
