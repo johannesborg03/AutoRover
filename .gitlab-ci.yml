@@ -41,8 +41,8 @@ build-and-test:
   except: 
     - tags # Ensures builds do not run for new releases
   script:
-    - docker build -f Dockerfile .
-    - docker run --rm my-container run-tests.sh  # Run tests to verify functionality
+    - docker build -f Dockerfile -t my-container:test .  # Build the image with a tag
+    - docker run --rm my-container:test run-tests.sh  # Use the built image for testing
 
 # This section describes what shall be done to deploy artefacts from the project. ADDING COMMENT
 release: 
