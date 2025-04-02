@@ -1,6 +1,6 @@
 # 2025-group-14
 
-
+Members: Lilly Heier, other names 
 
 ## Getting started
 
