@@ -38,14 +38,21 @@ build-and-test:
   tags:
     - docker-build
   stage: build
+  except: 
+    - tags # Ensures builds do not run for new releases
   script:
     - docker build -f Dockerfile .
+    - docker run --rm my-container run-tests.sh  # Run tests to verify functionality
 
 # This section describes what shall be done to deploy artefacts from the project. ADDING COMMENT
 release: 
   tags:
     - docker-build
   stage: deploy
+  rules: 
+    - if: '$CI_COMMIT_TAG =~ /^v[0-9]+\.[0-9]+\.[0-9]+$/'  # Enforces semantic versioning (vX.Y.Z)
+  needs:
+    - build-and-test  # Deployment only runs if build and tests succeed
   script:
     - docker build -f Dockerfile -t "$CI_REGISTRY_IMAGE":"$CI_COMMIT_TAG" .
     - docker push "$CI_REGISTRY_IMAGE":"$CI_COMMIT_TAG" 
