@@ -18,10 +18,10 @@ cd 2025-group14
 ## Building the project
 
 ### How to build the project, do the following in the terminal:
-mkdir build
-cd build
-cmake ..
-make
+mkdir build  
+cd build  
+cmake ..  
+make  
 
 ## Workflow
 
