@@ -1,6 +1,6 @@
 # 2025-group-14
 
-Members: Lilly Heier, other names 
+Members: Lilly Heier, Daniel Norberg 
 
 ## Getting started
 
