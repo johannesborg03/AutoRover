@@ -1,6 +1,6 @@
 # 2025-group-14
 
-Members: Lilly Heier, Daniel Norberg 
+Members: Lilly Heier, Daniel Norberg, Erik Gabrielsson, Johannes Borg.
 
 ## Getting started
 
