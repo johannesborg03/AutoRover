@@ -5,5 +5,16 @@
 
 TEST_CASE("Test PrimeChecker 1.") {
     PrimeChecker pc;
+    REQUIRE(pc.isPrime(5));
+}
+
+// Added to test cases more to try out the pipeline more thoroughly
+TEST_CASE("Test PrimeChecker 2.") {
+    PrimeChecker pc;
     REQUIRE(pc.isPrime(6));
+}
+
+TEST_CASE("Test PrimeChecker 3.") {
+    PrimeChecker pc;
+    REQUIRE(pc.isPrime(7));
 }
