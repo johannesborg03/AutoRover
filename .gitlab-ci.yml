@@ -43,7 +43,8 @@ build-and-test:
       when: never # If that if statement above is TRUE, run this job, Does not run this job if there is a tag
     - when: always # Prevent it from running under any other condition, If none of the conditions above is true run this
   script:
-    - docker build -f Dockerfile .
+    - docker build --target builder -t test-runner-image -f Dockerfile .
+    - docker run --rm test-runner-image make -C build test
 
 # This section describes what shall be done to deploy artefacts from the project.
 release:
