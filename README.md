@@ -2,6 +2,10 @@
 
 Members: Lilly Heier, Daniel Norberg, Erik Gabrielsson, Johannes Borg.
 
+## Badges
+
+[![pipeline status](https://gitlab.com/johannes-borg/my-project/badges/main/pipeline.svg)](https://gitlab.com/johannes-borg/my-project/pipelines)
+
 ## Getting started
 
 To make it easy for you to get started with GitLab, here's a list of recommended next steps.
