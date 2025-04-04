@@ -11,7 +11,7 @@ COPY . .
 # Build the application with static linking
 RUN mkdir build && cd build && \
     cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_EXE_LINKER_FLAGS="-static" .. && \
-    make && make test && \
+    make && ctest --output-on-failure && \
     strip --strip-all dit639_group14 && \
     cp dit639_group14 /tmp/
 
