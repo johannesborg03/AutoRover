@@ -4,7 +4,7 @@ Members: Lilly Heier, Daniel Norberg, Erik Gabrielsson, Johannes Borg.
 
 ## Badges
 
-[![pipeline status](https://git.chalmers.se/courses/dit638/students/2025-group-14/badges/main/pipeline.svg)](https://git.chalmers.se/courses/dit638/students/2025-group-14/-/pipelines)
+[![pipeline status](https://git.chalmers.se/courses/dit638/students/2025-group-14/badges/main/pipeline.svg)](https://git.chalmers.se/courses/dit638/students/2025-group-14/-/pipelines)  
 
 ## Getting started
 
@@ -76,8 +76,20 @@ Once an issue meets the acceptance criteria:
 ### Issue Tracking  
 - **Labels** will be used to indicate the current status of each issue.  
 - An **issue template** will be followed to ensure consistency and clarity. This template is available in the ".gitlab" folder.
-
-This workflow ensures **traceability, collaboration, and maintainability** throughout
+  
+This workflow ensures **traceability, collaboration, and maintainability** throughout  
+  
+## Pipeline  
+  
+### CI  
+The pipeline **builds and run all tests**. It will not deploy unless there is a tag.  
+If a tag is done for the push the pipeline **WILL NOT** build and run tests. This is not needed for tags.  
+Should a test fail the pipeline will also fail.  
+  
+### Docker Image  
+The pipeline will only create and push a docker image if it deploys, that is a commit with a tag using semantic version.  
+It does create a temporary docker image in the build-and-test stage, this is just used for to run tests inside the pipeline.   
+It is only temporary and only exists in the CI-run.  
 
 ## Add your files
 
