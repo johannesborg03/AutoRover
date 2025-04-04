@@ -38,6 +38,10 @@ build-and-test:
   tags:
     - docker-build
   stage: build
+  rules: 
+    - if: '$CI_COMMIT_TAG =~ /^v[0-9]+\.[0-9]+\.[0-9]+$/'  # Only run on semantic version tags
+      when: never # If that if statement above is TRUE, run this job, Does not run this job if there is a tag
+    - when: always # Prevent it from running under any other condition, If none of the conditions above is true run this
   script:
     - docker build -f Dockerfile .
 
@@ -48,8 +52,8 @@ release:
   stage: deploy
   rules: 
     - if: '$CI_COMMIT_TAG =~ /^v[0-9]+\.[0-9]+\.[0-9]+$/'  # Only run on semantic version tags
-      when: always
-    - when: never  # Prevent it from running under any other condition
+      when: always # If that if statement above is TRUE, run this job
+    - when: never  # Prevent it from running under any other condition, If none of the conditions above is true run this
   script:
     - docker build -f Dockerfile -t "$CI_REGISTRY_IMAGE":"$CI_COMMIT_TAG" .
     - docker push "$CI_REGISTRY_IMAGE":"$CI_COMMIT_TAG"
