@@ -4,7 +4,7 @@ Members: Lilly Heier, Daniel Norberg, Erik Gabrielsson, Johannes Borg.
 
 ## Badges
 
-[![pipeline status](https://gitlab.com/johannes-borg/my-project/badges/main/pipeline.svg)](https://gitlab.com/johannes-borg/my-project/pipelines)
+[![pipeline status](https://git.chalmers.se/courses/dit638/students/2025-group-14/badges/main/pipeline.svg)](https://git.chalmers.se/courses/dit638/students/2025-group-14/-/pipelines)
 
 ## Getting started
 
