@@ -19,7 +19,12 @@ To facilitate knowledge transfer and ensure that critical information is shared,
 ---
 
 ## What is our usual communication plan?
-We will primarily communicate through Discord for questions, updates, and informal communication. We will use emails for sending large files and Google Docs for collaborative notes and document sharing.
+We will primarily communicate through Discord for questions, updates, and informal communication. We will use emails for sending large files and Google Docs for collaborative notes and document sharing. We plan to meet atleast twice a week in person and twice a week remotely. We do this to facilitate better knowledge-sharing between each other to make development as efficient and smooth as possible.
+
+---
+
+## How will we avoid conflicts?
+To minimize conflicts, we will prioritize open knowledge-sharing, clear communication, and regular brainstorming sessions. We’ll also utilize clear guidelines and, where appropriate, hold in-person meetings to ensure everyone is aligned on our project goals and working under the same shared understanding.
 
 ---
 
