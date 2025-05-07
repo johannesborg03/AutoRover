@@ -2,7 +2,7 @@
 FROM alpine:3.17 AS builder
 
 # Install build dependencies (only necessary ones)
-RUN apk add --no-cache cmake g++ make
+RUN apk add --no-cache cmake g++ make git
 
 # Set working directory
 WORKDIR /opt/sources
