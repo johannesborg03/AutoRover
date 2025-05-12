@@ -1,5 +1,5 @@
 # Build stage
-FROM alpine:3.17 AS builder
+FROM alpine:3.21 AS builder
 
 # Install build dependencies (only necessary ones)
 RUN apk add --no-cache cmake g++ make git
