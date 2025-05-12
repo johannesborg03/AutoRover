@@ -28,5 +28,5 @@ Makefile
 *.code-workspace
 
 # Ignore user-specific settings
-*.DS_Store  # macOS
+.DS_Store  # macOS
 Thumbs.db   # Windows
