@@ -30,3 +30,4 @@ Makefile
 # Ignore user-specific settings
 *.DS_Store  # macOS
 Thumbs.db   # Windows
+.DS_Store
