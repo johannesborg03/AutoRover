@@ -30,7 +30,8 @@
         ca-certificates \
         cmake \
         build-essential \
-        libopencv-dev
+        libopencv-dev \
+        git
     
     # Include this source tree and compile the sources
     ADD . /opt/sources
