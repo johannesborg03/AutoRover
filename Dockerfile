@@ -24,7 +24,7 @@
         apt-get upgrade -y && \
         apt-get dist-upgrade -y
     
-    # Install the development libraries for OpenCV
+    # Install the development libraries for OpenCV and git
     RUN apt-get update -y && \
         apt-get install -y --no-install-recommends \
         ca-certificates \
