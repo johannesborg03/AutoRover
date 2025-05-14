@@ -44,7 +44,7 @@ build-and-test:
     - when: always # Prevent it from running under any other condition, If none of the conditions above is true run this
   script:
     - docker build --target builder -t test-runner-image -f Dockerfile .
-    - docker run --rm test-runner-image make -C build test #Run tests
+    - docker run --rm test-runner-image make -C build #Run tests
 
 # This section describes what shall be done to deploy artefacts from the project.
 release:
