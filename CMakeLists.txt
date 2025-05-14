@@ -15,7 +15,7 @@
 
 cmake_minimum_required(VERSION 3.2)
 
-project(template-opencv)
+project(dit639-group14)
 
 ################################################################################
 # Defining the relevant versions of OpenDLV Standard Message Set and libcluon.
@@ -81,7 +81,7 @@ set(LIBRARIES Threads::Threads)
 if(UNIX)
     if(NOT "${CMAKE_SYSTEM_NAME}" STREQUAL "Darwin")
         find_package(LibRT REQUIRED)
-        set(LIBRARIES ${LIBRARIES} ${LIBRT_LIBRARIES})
+        
         include_directories(SYSTEM ${LIBRT_INCLUDE_DIR})
     endif()
 endif()
