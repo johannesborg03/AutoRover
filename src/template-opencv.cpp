@@ -20,9 +20,13 @@
 // Include the OpenDLV Standard Message Set that contains messages that are usually exchanged for automotive or robotic applications 
 #include "opendlv-standard-message-set.hpp"
 
+#include "algorithm/algorithm.hpp"
+
 // Include the GUI and image processing header files from OpenCV
 #include <opencv2/highgui/highgui.hpp>
 #include <opencv2/imgproc/imgproc.hpp>
+#include <iostream> // Gives commands like cout for input and output
+#include <mutex> // For thread saftey to keep recources safe
 
 int32_t main(int32_t argc, char **argv) {
     int32_t retCode{1};
@@ -57,16 +61,25 @@ int32_t main(int32_t argc, char **argv) {
             cluon::OD4Session od4{static_cast<uint16_t>(std::stoi(commandlineArguments["cid"]))};
 
             opendlv::proxy::GroundSteeringRequest gsr;
+            opendlv::proxy::AngularVelocityReading avr;
             std::mutex gsrMutex;
+            std::mutex avrMutex;
             auto onGroundSteeringRequest = [&gsr, &gsrMutex](cluon::data::Envelope &&env){
                 // The envelope data structure provide further details, such as sampleTimePoint as shown in this test case:
                 // https://github.com/chrberger/libcluon/blob/master/libcluon/testsuites/TestEnvelopeConverter.cpp#L31-L40
                 std::lock_guard<std::mutex> lck(gsrMutex);
                 gsr = cluon::extractMessage<opendlv::proxy::GroundSteeringRequest>(std::move(env));
+                /*
                 std::cout << "lambda: groundSteering = " << gsr.groundSteering() << std::endl;
+                */
+            };
+            auto onAngularVelocityReading = [&avr, &avrMutex](cluon::data::Envelope &&env) {
+                std::lock_guard<std::mutex> lck(avrMutex);
+                avr = cluon::extractMessage<opendlv::proxy::AngularVelocityReading>(std::move(env));
             };
 
             od4.dataTrigger(opendlv::proxy::GroundSteeringRequest::ID(), onGroundSteeringRequest);
+            od4.dataTrigger(opendlv::proxy::AngularVelocityReading::ID(), onAngularVelocityReading);
 
             // Endless loop; end the program by pressing Ctrl-C.
             while (od4.isRunning()) {
@@ -82,6 +95,17 @@ int32_t main(int32_t argc, char **argv) {
                     // Copy the pixels from the shared memory into our own data structure.
                     cv::Mat wrapped(HEIGHT, WIDTH, CV_8UC4, sharedMemory->data());
                     img = wrapped.clone();
+
+                    double angularVelocityZ = 0.0;
+                    {
+                        std::lock_guard<std::mutex> lck(avrMutex);
+                        angularVelocityZ = avr.angularVelocityZ();
+                    }
+
+                    double steeringAngle = calculateSteeringWheelAngle(angularVelocityZ);
+
+                    unsigned long long int frameTimeStamp = static_cast<unsigned long long int>(cluon::time::toMicroseconds(sharedMemory->getTimeStamp().second) );
+                    std::cout << "group_14;" << frameTimeStamp << ";" << steeringAngle << std::endl;
                 }
                 // TODO: Here, you can add some code to check the sampleTimePoint when the current frame was captured.
                 sharedMemory->unlock();
