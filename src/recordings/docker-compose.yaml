@@ -22,7 +22,7 @@ services:
         dockerfile: Dockerfile
       ipc: "host"
       restart: "unless-stopped"
-      network_mode: "host"
+      network_mode: "bridge"
       volumes:
       - /tmp:/tmp
       - $PWD:/host
@@ -33,10 +33,13 @@ services:
       working_dir: "/host"
       stop_signal: SIGINT
     my-template-opencv:
-      image: ${VERSION_OF_ALGO}
-      network_mode: "host"
+      build:
+        context: ../..        # Adjust this path to where your Dockerfile is (likely the project root)
+        dockerfile: Dockerfile
+      image: my-opencv-example:latest
+      network_mode: "bridge"
       depends_on: 
-      - video-h264-replay
+        - video-h264-replay
       restart: "unless-stopped"
       environment:
         - DISPLAY=$DISPLAY
