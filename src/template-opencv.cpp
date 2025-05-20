@@ -21,6 +21,7 @@
 #include "opendlv-standard-message-set.hpp"
 
 #include "algorithm/algorithm.hpp"
+#include "ConeDetector/ConeDetector.hpp" // Add this include for cone detection
 
 // Include the GUI and image processing header files from OpenCV
 #include <opencv2/highgui/highgui.hpp>
@@ -102,7 +103,12 @@ int32_t main(int32_t argc, char **argv) {
                         angularVelocityZ = avr.angularVelocityZ();
                     }
 
-                    double steeringAngle = calculateSteeringWheelAngle(angularVelocityZ);
+                 
+                    // Detect cones in the image
+                    ConePositions cones = detectCones(img);
+
+                    // Calculate steering angle using both angular velocity and cone detection
+                    double steeringAngle = calculateSteeringWheelAngle(cones, img.cols, angularVelocityZ);
 
                     unsigned long long int frameTimeStamp = static_cast<unsigned long long int>(cluon::time::toMicroseconds(sharedMemory->getTimeStamp().second) );
                     std::cout << "group_14;" << frameTimeStamp << ";" << steeringAngle << std::endl;
