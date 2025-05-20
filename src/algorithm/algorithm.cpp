@@ -1,21 +1,40 @@
 // C++ file for algorithm
 
 #include "algorithm.hpp"
+#include <algorithm>
+#include <cmath>
 
-double calculateSteeringWheelAngle(double angularVelocityZ) {
-    // Scale the angular velocity to compute the steering angle
-    const double scalingFactor = 0.003; // Adjust this factor as needed
-    double steeringAngle = angularVelocityZ * scalingFactor;
+double calculateSteeringWheelAngle(const ConePositions& cones, int imgWidth, double angularVelocityZ) {
+    // Only use cone-based calculation, ignore angularVelocityZ
 
-    // Apply limits to the steering angle
-    const double maxSteeringAngle = 0.21;
-    const double minSteeringAngle = -0.21;
+    int centerX = imgWidth / 2;
+    double steeringAngle = 0.0;
 
-    if (steeringAngle > maxSteeringAngle) {
-        steeringAngle = maxSteeringAngle;
-    } else if (steeringAngle < minSteeringAngle) {
-        steeringAngle = minSteeringAngle;
+    if (!cones.yellowCones.empty() && !cones.blueCones.empty()) {
+        int avgYellowX = 0, avgBlueX = 0;
+        for (const auto& pt : cones.yellowCones) avgYellowX += pt.x;
+        avgYellowX /= cones.yellowCones.size();
+        for (const auto& pt : cones.blueCones) avgBlueX += pt.x;
+        avgBlueX /= cones.blueCones.size();
+        int trackCenter = (avgYellowX + avgBlueX) / 2;
+        double error = centerX - trackCenter; // <-- flip sign here
+        steeringAngle = error / static_cast<double>(centerX);
+    }
+    else if (!cones.yellowCones.empty()) {
+        int avgYellowX = 0;
+        for (const auto& pt : cones.yellowCones) avgYellowX += pt.x;
+        avgYellowX /= cones.yellowCones.size();
+        double error = centerX - avgYellowX; // <-- flip sign here
+        steeringAngle = error / static_cast<double>(centerX);
+    }
+    else if (!cones.blueCones.empty()) {
+        int avgBlueX = 0;
+        for (const auto& pt : cones.blueCones) avgBlueX += pt.x;
+        avgBlueX /= cones.blueCones.size();
+        double error = centerX - avgBlueX; // <-- flip sign here
+        steeringAngle = error / static_cast<double>(centerX);
     }
 
+    steeringAngle = std::clamp(steeringAngle, -1.0, 1.0);
     return steeringAngle;
 }
