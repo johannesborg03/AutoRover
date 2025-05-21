@@ -53,8 +53,6 @@ ConePositions detectCones(const cv::Mat& img) {
             cones.blueCones.push_back(cv::Point(static_cast<int>(m.m10 / m.m00) + roi.x,
                                                 static_cast<int>(m.m01 / m.m00) + roi.y));
         }
-    } else {
-        steeringAngle = 0.0; // or keep previous value
     }
 
     return cones;
