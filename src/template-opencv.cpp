@@ -97,11 +97,7 @@ int32_t main(int32_t argc, char **argv) {
                     cv::Mat wrapped(HEIGHT, WIDTH, CV_8UC4, sharedMemory->data());
                     img = wrapped.clone();
 
-                    {
-                        std::lock_guard<std::mutex> lck(avrMutex);
-                        angularVelocityZ = avr.angularVelocityZ();
-                    }
-
+                  
                  
                     // Detect cones in the image
                     ConePositions cones = detectCones(img);
