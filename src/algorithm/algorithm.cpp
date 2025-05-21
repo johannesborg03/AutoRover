@@ -4,7 +4,7 @@
 #include <algorithm>
 #include <cmath>
 
-double calculateSteeringWheelAngle(const ConePositions& cones, int imgWidth, double angularVelocityZ) {
+double calculateSteeringWheelAngle(const ConePositions& cones, int imgWidth) {
     // Only use cone-based calculation, ignore angularVelocityZ
 
     int centerX = imgWidth / 2;
