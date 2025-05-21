@@ -97,7 +97,6 @@ int32_t main(int32_t argc, char **argv) {
                     cv::Mat wrapped(HEIGHT, WIDTH, CV_8UC4, sharedMemory->data());
                     img = wrapped.clone();
 
-                    double angularVelocityZ = 0.0;
                     {
                         std::lock_guard<std::mutex> lck(avrMutex);
                         angularVelocityZ = avr.angularVelocityZ();
@@ -108,7 +107,7 @@ int32_t main(int32_t argc, char **argv) {
                     ConePositions cones = detectCones(img);
 
                     // Calculate steering angle using both angular velocity and cone detection
-                    double steeringAngle = calculateSteeringWheelAngle(cones, img.cols, angularVelocityZ);
+                    double steeringAngle = calculateSteeringWheelAngle(cones, img.cols);
 
                     unsigned long long int frameTimeStamp = static_cast<unsigned long long int>(cluon::time::toMicroseconds(sharedMemory->getTimeStamp().second) );
                     std::cout << "group_14;" << frameTimeStamp << ";" << steeringAngle << std::endl;
