@@ -28,6 +28,8 @@
 #include <opencv2/imgproc/imgproc.hpp>
 #include <iostream> // Gives commands like cout for input and output
 #include <mutex> // For thread saftey to keep recources safe
+#include <sstream>
+#include <ctime>
 
 int32_t main(int32_t argc, char **argv) {
     int32_t retCode{1};
@@ -70,9 +72,7 @@ int32_t main(int32_t argc, char **argv) {
                 // https://github.com/chrberger/libcluon/blob/master/libcluon/testsuites/TestEnvelopeConverter.cpp#L31-L40
                 std::lock_guard<std::mutex> lck(gsrMutex);
                 gsr = cluon::extractMessage<opendlv::proxy::GroundSteeringRequest>(std::move(env));
-                /*
-                std::cout << "lambda: groundSteering = " << gsr.groundSteering() << std::endl;
-                */
+        
             };
             auto onAngularVelocityReading = [&avr, &avrMutex](cluon::data::Envelope &&env) {
                 std::lock_guard<std::mutex> lck(avrMutex);
@@ -86,7 +86,8 @@ int32_t main(int32_t argc, char **argv) {
             while (od4.isRunning()) {
                 // OpenCV data structure to hold an image.
                 cv::Mat img;
-
+                //Get the angular velocity
+                double angularVelocityZ = 0.0;
                 // Wait for a notification of a new frame.
                 sharedMemory->wait();
 
@@ -97,13 +98,17 @@ int32_t main(int32_t argc, char **argv) {
                     cv::Mat wrapped(HEIGHT, WIDTH, CV_8UC4, sharedMemory->data());
                     img = wrapped.clone();
 
-                  
+                    
+                    {
+                        std::lock_guard<std::mutex> lck(avrMutex);
+                        angularVelocityZ = avr.angularVelocityZ();
+                    }
                  
                     // Detect cones in the image
                     ConePositions cones = detectCones(img);
 
-                    // Calculate steering angle using both angular velocity and cone detection
-                    double steeringAngle = calculateSteeringWheelAngle(cones, img.cols);
+                    // Calculate steering angle
+                    double steeringAngle = calculateSteeringWheelAngle(angularVelocityZ);
 
                     unsigned long long int frameTimeStamp = static_cast<unsigned long long int>(cluon::time::toMicroseconds(sharedMemory->getTimeStamp().second) );
                     std::cout << "group_14;" << frameTimeStamp << ";" << steeringAngle << std::endl;
@@ -118,7 +123,7 @@ int32_t main(int32_t argc, char **argv) {
                 // If you want to access the latest received ground steering, don't forget to lock the mutex:
                 {
                     std::lock_guard<std::mutex> lck(gsrMutex);
-                    std::cout << "main: groundSteering = " << gsr.groundSteering() << std::endl;
+                    // std::cout << "main: groundSteering = " << gsr.groundSteering() << std::endl;
                 }
 
                 // Display image on your screen.
