@@ -12,7 +12,7 @@ const cv::Scalar YELLOW_MAX(75, 255, 255);
 ConePositions detectCones(const cv::Mat& img) {
     ConePositions cones;
 
-    // Region of Interest (tweak as needed)
+    // Region of Interest (ROI)
     cv::Rect roi(60, 250, 480, 140);
     cv::Mat roiImg = img(roi).clone();
 
