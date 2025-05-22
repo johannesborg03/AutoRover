@@ -34,7 +34,7 @@ services:
       stop_signal: SIGINT
     my-template-opencv:
       build:
-        context: ../..        # Adjust this path to where your Dockerfile is (likely the project root)
+        context: ../..       # Adjust this path to where your Dockerfile is (likely the project root)
         dockerfile: Dockerfile
       image: my-opencv-example:latest
       network_mode: "bridge"
