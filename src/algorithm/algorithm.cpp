@@ -1,10 +1,8 @@
-// C++ file for algorithm
-
 #include "algorithm.hpp"
 
 double calculateSteeringWheelAngle(double angularVelocityZ) {
     // Scale the angular velocity to compute the steering angle
-    const double scalingFactor = 0.003; // Adjust this factor as needed
+    const double scalingFactor = 0.003; 
     double steeringAngle = angularVelocityZ * scalingFactor;
 
     // Apply limits to the steering angle
