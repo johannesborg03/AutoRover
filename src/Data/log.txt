@@ -1,0 +1,868 @@
+group_14;1584542908472654;-0.0203247
+main: groundSteering = -0.0509744
+group_14;1584542908572519;-0.0514526
+main: groundSteering = -0
+group_14;1584542908673095;-0.0472412
+main: groundSteering = -0
+group_14;1584542908774540;-0.02948
+main: groundSteering = -0
+group_14;1584542908873035;-0.0210571
+main: groundSteering = -0.0899643
+group_14;1584542908972983;-0.024353
+main: groundSteering = -0.143948
+group_14;1584542909072821;-0.111511
+main: groundSteering = -0.143948
+group_14;1584542909172487;-0.154541
+main: groundSteering = -0.18593
+group_14;1584542909275191;-0.136597
+main: groundSteering = -0.0899643
+group_14;1584542909372678;-0.130005
+main: groundSteering = -0.0899643
+group_14;1584542909472096;-0.132202
+main: groundSteering = -0
+group_14;1584542909572446;-0.0379028
+main: groundSteering = -0
+group_14;1584542909672895;-0.0353394
+main: groundSteering = -0
+group_14;1584542909774217;-0.0203247
+main: groundSteering = -0
+group_14;1584542909871989;-0.0137329
+main: groundSteering = -0.0239869
+group_14;1584542909972127;-0.0221558
+main: groundSteering = -0.14694
+group_14;1584542910071965;-0.132385
+main: groundSteering = -0
+group_14;1584542910171937;-0.0373535
+main: groundSteering = -0
+group_14;1584542910274253;-0.003479
+main: groundSteering = -0
+group_14;1584542910371900;-0.00238037
+main: groundSteering = -0
+group_14;1584542910471906;-0.00769043
+main: groundSteering = 0.146949
+group_14;1584542910572090;0.159485
+main: groundSteering = -0
+group_14;1584542910572090;0.159485
+main: groundSteering = -0
+group_14;1584542910672539;0.102722
+main: groundSteering = -0
+group_14;1584542910773997;0.0106201
+main: groundSteering = -0
+group_14;1584542910872002;0.0302124
+main: groundSteering = 0.161943
+group_14;1584542910971908;0.142822
+main: groundSteering = 0.143957
+group_14;1584542911072029;0.186584
+main: groundSteering = 0.0929737
+group_14;1584542911171945;0.135498
+main: groundSteering = 0.0569845
+group_14;1584542911277650;0.0944824
+main: groundSteering = 0.0269964
+group_14;1584542911372417;0.046875
+main: groundSteering = 0.0179946
+group_14;1584542911471938;0.0265503
+main: groundSteering = 0.0120023
+group_14;1584542911571664;0.0137329
+main: groundSteering = 0.0599851
+group_14;1584542911672751;0.0567627
+main: groundSteering = 0.0809714
+group_14;1584542911774742;0.0734253
+main: groundSteering = 0.0899731
+group_14;1584542911871626;0.114624
+main: groundSteering = 0.206934
+group_14;1584542911971804;0.21
+main: groundSteering = 0.236922
+group_14;1584542912074268;0.21
+main: groundSteering = 0.242914
+group_14;1584542912171933;0.21
+main: groundSteering = 0.0959743
+group_14;1584542912273797;0.21
+main: groundSteering = 0.0179946
+group_14;1584542912371724;0.12323
+main: groundSteering = -0
+group_14;1584542912471506;0.0322266
+main: groundSteering = 0.0120023
+group_14;1584542912571466;-0.00292969
+main: groundSteering = 0.0509833
+group_14;1584542912672387;0.0274658
+main: groundSteering = 0.0509833
+group_14;1584542912773661;0.0402832
+main: groundSteering = 0.00300058
+group_14;1584542912871571;0.0221558
+main: groundSteering = 0.0239958
+group_14;1584542912971582;0.00933838
+main: groundSteering = 0.029997
+group_14;1584542913071420;0.0267334
+main: groundSteering = 0.0120023
+group_14;1584542913171331;0.0298462
+main: groundSteering = -0
+group_14;1584542913273678;0.0270996
+main: groundSteering = -0
+group_14;1584542913371675;0.0133667
+main: groundSteering = -0
+group_14;1584542913471300;-0.00494385
+main: groundSteering = 0.131955
+group_14;1584542913573831;0.0853271
+main: groundSteering = 0.251916
+group_14;1584542913673214;0.197754
+main: groundSteering = 0.290888
+group_14;1584542913673214;0.197754
+main: groundSteering = 0.290888
+group_14;1584542913773930;0.2005
+main: groundSteering = 0.290888
+group_14;1584542913773930;0.2005
+main: groundSteering = 0.290888
+group_14;1584542913871575;0.21
+main: groundSteering = 0.185939
+group_14;1584542913971284;0.204163
+main: groundSteering = -0
+group_14;1584542914071197;0.172852
+main: groundSteering = -0
+group_14;1584542914171330;0.0305786
+main: groundSteering = -0
+group_14;1584542914273974;0.0201416
+main: groundSteering = -0
+group_14;1584542914371134;0.0285645
+main: groundSteering = -0
+group_14;1584542914471366;0.0245361
+main: groundSteering = -0
+group_14;1584542914571075;-0.00402832
+main: groundSteering = 0.290888
+group_14;1584542914671676;0.00805664
+main: groundSteering = 0.290888
+group_14;1584542914773329;0.21
+main: groundSteering = -0
+group_14;1584542914871099;0.156189
+main: groundSteering = -0
+group_14;1584542914971061;0.0267334
+main: groundSteering = -0.0359804
+group_14;1584542915071472;-0.000732422
+main: groundSteering = -0
+group_14;1584542915173995;-0.0183105
+main: groundSteering = -0
+group_14;1584542915273165;-0.00769043
+main: groundSteering = -0
+group_14;1584542915371381;-0.012085
+main: groundSteering = -0
+group_14;1584542915471166;-0.0144653
+main: groundSteering = -0
+group_14;1584542915571068;-0.0175781
+main: groundSteering = -0
+group_14;1584542915672057;-0.0256348
+main: groundSteering = -0
+group_14;1584542915772789;-0.017395
+main: groundSteering = -0
+group_14;1584542915870931;-0.0067749
+main: groundSteering = -0
+group_14;1584542915973716;-0.00531006
+main: groundSteering = -0
+group_14;1584542916071023;-0.00402832
+main: groundSteering = -0
+group_14;1584542916170757;0.00366211
+main: groundSteering = -0
+group_14;1584542916273052;-0.00109863
+main: groundSteering = -0
+group_14;1584542916370899;-0.0333252
+main: groundSteering = -0
+group_14;1584542916470706;-0.0113525
+main: groundSteering = -0
+group_14;1584542916571108;-0.00585938
+main: groundSteering = 0.206934
+group_14;1584542916671419;-0.0263672
+main: groundSteering = -0
+group_14;1584542916776562;0.137512
+main: groundSteering = -0
+group_14;1584542916871380;0.0492554
+main: groundSteering = 0.260909
+group_14;1584542916970804;0.05896
+main: groundSteering = -0.104958
+group_14;1584542916970804;0.05896
+main: groundSteering = -0.104958
+group_14;1584542917070592;0.21
+main: groundSteering = -0
+group_14;1584542917171092;-0.0380859
+main: groundSteering = -0
+group_14;1584542917272368;-0.0256348
+main: groundSteering = -0
+group_14;1584542917370572;-0.043396
+main: groundSteering = -0
+group_14;1584542917470692;-0.0137329
+main: groundSteering = -0
+group_14;1584542917573515;-0.0148315
+main: groundSteering = 0.203933
+group_14;1584542917671308;-0.0148315
+main: groundSteering = 0.200933
+group_14;1584542917772220;0.21
+main: groundSteering = 0.185939
+group_14;1584542917870667;0.21
+main: groundSteering = 0.179937
+group_14;1584542917970513;0.21
+main: groundSteering = 0.221928
+group_14;1584542918070763;0.21
+main: groundSteering = 0.128963
+group_14;1584542918070763;0.21
+main: groundSteering = 0.128963
+group_14;1584542918170583;0.21
+main: groundSteering = -0
+group_14;1584542918272671;0.21
+main: groundSteering = -0
+group_14;1584542918370765;0.0371704
+main: groundSteering = -0
+group_14;1584542918470637;0.00823975
+main: groundSteering = -0
+group_14;1584542918570532;0.0307617
+main: groundSteering = -0
+group_14;1584542918671191;0.000732422
+main: groundSteering = 0.203933
+group_14;1584542918772430;0.0194092
+main: groundSteering = 0.0929737
+group_14;1584542918870298;0.209656
+main: groundSteering = 0.0899731
+group_14;1584542918970452;0.191162
+main: groundSteering = 0.0689779
+group_14;1584542919073114;0.129822
+main: groundSteering = 0.0239958
+group_14;1584542919170463;0.118469
+main: groundSteering = -0
+group_14;1584542919272805;0.0435791
+main: groundSteering = -0
+group_14;1584542919370145;0.0327759
+main: groundSteering = -0
+group_14;1584542919470100;-0.026001
+main: groundSteering = -0
+group_14;1584542919570261;0.0153809
+main: groundSteering = -0.0419816
+group_14;1584542919670736;0.020874
+main: groundSteering = -0.0239869
+group_14;1584542919670736;0.020874
+main: groundSteering = -0.0239869
+group_14;1584542919772076;-0.0466919
+main: groundSteering = -0
+group_14;1584542919870191;-0.0276489
+main: groundSteering = -0
+group_14;1584542919970095;-0.0507202
+main: groundSteering = -0
+group_14;1584542920070164;-0.0254517
+main: groundSteering = -0
+group_14;1584542920170335;-0.0446777
+main: groundSteering = -0
+group_14;1584542920272276;-0.0439453
+main: groundSteering = -0
+group_14;1584542920369906;-0.0216064
+main: groundSteering = -0
+group_14;1584542920470097;0.00366211
+main: groundSteering = 0.125962
+group_14;1584542920569919;-0.00585938
+main: groundSteering = -0
+group_14;1584542920671123;0.171936
+main: groundSteering = -0
+group_14;1584542920772256;0.148132
+main: groundSteering = -0
+group_14;1584542920869890;0.0205078
+main: groundSteering = -0
+group_14;1584542920969813;0.0342407
+main: groundSteering = -0
+group_14;1584542921069978;0.0146484
+main: groundSteering = -0
+group_14;1584542921169774;0.0113525
+main: groundSteering = -0
+group_14;1584542921272034;0.00238037
+main: groundSteering = -0.18593
+group_14;1584542921369932;0.0122681
+main: groundSteering = -0
+group_14;1584542921469732;-0.0820312
+main: groundSteering = -0
+group_14;1584542921569902;-0.14209
+main: groundSteering = -0
+group_14;1584542921670671;-0.0133667
+main: groundSteering = -0
+group_14;1584542921771873;-0.00640869
+main: groundSteering = -0
+group_14;1584542921869708;-0.0201416
+main: groundSteering = -0
+group_14;1584542921969999;-0.0109863
+main: groundSteering = -0
+group_14;1584542922069640;-0.0108032
+main: groundSteering = -0
+group_14;1584542922169657;-0.00805664
+main: groundSteering = 0.125962
+group_14;1584542922272057;-0.0177612
+main: groundSteering = 0.122962
+group_14;1584542922369901;0.0523682
+main: groundSteering = 0.0749791
+group_14;1584542922469611;0.151062
+main: groundSteering = 0.0329887
+group_14;1584542922570310;0.0878906
+main: groundSteering = 0.0120023
+group_14;1584542922673526;0.0265503
+main: groundSteering = -0
+group_14;1584542922772536;0.0113525
+main: groundSteering = -0
+group_14;1584542922870085;0.00805664
+main: groundSteering = -0
+group_14;1584542922970465;0.010437
+main: groundSteering = -0
+group_14;1584542923069747;0.020874
+main: groundSteering = 0.0239958
+group_14;1584542923170115;0.00622559
+main: groundSteering = 0.0239958
+group_14;1584542923271908;0.00238037
+main: groundSteering = 0.0239958
+group_14;1584542923369354;0.00640869
+main: groundSteering = 0.0239958
+group_14;1584542923473537;0
+main: groundSteering = 0.0929737
+group_14;1584542923570308;0.0201416
+main: groundSteering = 0.0929737
+group_14;1584542923669952;0.00476074
+main: groundSteering = 0.0899731
+group_14;1584542923771600;0.088623
+main: groundSteering = 0.0689779
+group_14;1584542923869239;0.0888062
+main: groundSteering = 0.098966
+group_14;1584542923969427;0.0783691
+main: groundSteering = 0.098966
+group_14;1584542924069367;0.109314
+main: groundSteering = 0.182938
+group_14;1584542924169237;0.151794
+main: groundSteering = 0.212926
+group_14;1584542924271417;0.209839
+main: groundSteering = 0.290888
+group_14;1584542924369480;0.207825
+main: groundSteering = 0.290888
+group_14;1584542924369480;0.207825
+main: groundSteering = 0.290888
+group_14;1584542924469245;0.21
+main: groundSteering = 0.290888
+group_14;1584542924569196;0.207275
+main: groundSteering = 0.290888
+group_14;1584542924670209;0.21
+main: groundSteering = 0.290888
+group_14;1584542924771130;0.21
+main: groundSteering = 0.242914
+group_14;1584542924869078;0.21
+main: groundSteering = -0
+group_14;1584542924969589;0.196472
+main: groundSteering = -0
+group_14;1584542925069036;0.0170288
+main: groundSteering = -0
+group_14;1584542925069036;0.0170288
+main: groundSteering = -0
+group_14;1584542925169519;0.017395
+main: groundSteering = -0
+group_14;1584542925271227;-0.000732422
+main: groundSteering = -0.053975
+group_14;1584542925369196;-0.0300293
+main: groundSteering = -0
+group_14;1584542925468938;-0.0210571
+main: groundSteering = 0.188939
+group_14;1584542925569118;-0.013916
+main: groundSteering = -0
+group_14;1584542925669569;0.0968628
+main: groundSteering = -0
+group_14;1584542925869316;0.0146484
+main: groundSteering = 0.0120023
+group_14;1584542925968943;0.0142822
+main: groundSteering = -0
+group_14;1584542926068990;0.0230713
+main: groundSteering = -0
+group_14;1584542926169059;0.00311279
+main: groundSteering = -0
+group_14;1584542926270718;0.0142822
+main: groundSteering = -0
+group_14;1584542926368838;0.000732422
+main: groundSteering = -0
+group_14;1584542926469005;0.0100708
+main: groundSteering = -0
+group_14;1584542926571959;0.0201416
+main: groundSteering = -0
+group_14;1584542926670037;0.00457764
+main: groundSteering = -0
+group_14;1584542926771407;0.00842285
+main: groundSteering = 0.0629856
+group_14;1584542926868645;0.00640869
+main: groundSteering = 0.290888
+group_14;1584542926968618;0.0613403
+main: groundSteering = -0
+group_14;1584542926968618;0.0613403
+main: groundSteering = -0
+group_14;1584542927068824;0.209106
+main: groundSteering = -0
+group_14;1584542927168582;0.0668335
+main: groundSteering = -0
+group_14;1584542927270557;0.0157471
+main: groundSteering = -0
+group_14;1584542927368744;0.00805664
+main: groundSteering = -0
+group_14;1584542927468511;0.0137329
+main: groundSteering = -0
+group_14;1584542927568478;-0.003479
+main: groundSteering = -0.0269875
+group_14;1584542927568478;-0.003479
+main: groundSteering = -0.0269875
+group_14;1584542927669321;-0.0111694
+main: groundSteering = -0.290888
+group_14;1584542927770482;-0.0124512
+main: groundSteering = -0
+group_14;1584542927868508;-0.161499
+main: groundSteering = -0
+group_14;1584542927968628;-0.0276489
+main: groundSteering = -0
+group_14;1584542928068383;-0.0135498
+main: groundSteering = 0.0479916
+group_14;1584542928168365;-0.0117188
+main: groundSteering = 0.221928
+group_14;1584542928270649;0.0335083
+main: groundSteering = 0.125962
+group_14;1584542928368589;0.179626
+main: groundSteering = 0.00600117
+group_14;1584542928468353;0.193909
+main: groundSteering = 0.233921
+group_14;1584542928568496;0.02948
+main: groundSteering = 0.206934
+group_14;1584542928668987;0.199768
+main: groundSteering = 0.197932
+group_14;1584542928770387;0.202881
+main: groundSteering = 0.164943
+group_14;1584542928868447;0.21
+main: groundSteering = 0.164943
+group_14;1584542928968524;0.21
+main: groundSteering = 0.140956
+group_14;1584542929068242;0.21
+main: groundSteering = 0.0749791
+group_14;1584542929168373;0.21
+main: groundSteering = 0.0150029
+group_14;1584542929270720;0.113892
+main: groundSteering = -0
+group_14;1584542929368241;0.0408325
+main: groundSteering = -0
+group_14;1584542929468408;0.0148315
+main: groundSteering = -0
+group_14;1584542929468408;0.0148315
+main: groundSteering = -0
+group_14;1584542929568176;0.0265503
+main: groundSteering = -0
+group_14;1584542929668918;-0.00366211
+main: groundSteering = -0
+group_14;1584542929668918;-0.00366211
+main: groundSteering = -0
+group_14;1584542929770711;0.000183105
+main: groundSteering = 0.0899731
+group_14;1584542929868279;-0.00183105
+main: groundSteering = 0.185939
+group_14;1584542929968143;0.101624
+main: groundSteering = 0.206934
+group_14;1584542930068226;0.199951
+main: groundSteering = 0.173945
+group_14;1584542930168193;0.21
+main: groundSteering = 0.0539839
+group_14;1584542930270247;0.21
+main: groundSteering = -0
+group_14;1584542930368209;0.102539
+main: groundSteering = -0
+group_14;1584542930468026;0.0177612
+main: groundSteering = -0
+group_14;1584542930568108;0.0162964
+main: groundSteering = -0
+group_14;1584542930668783;0.0217896
+main: groundSteering = -0.239914
+group_14;1584542930770086;0.0108032
+main: groundSteering = -0
+group_14;1584542930867886;-0.113159
+main: groundSteering = -0
+group_14;1584542930968044;-0.0701294
+main: groundSteering = -0
+group_14;1584542931067838;-0.0393677
+main: groundSteering = -0.137947
+group_14;1584542931167829;-0.00897217
+main: groundSteering = -0
+group_14;1584542931270113;-0.098877
+main: groundSteering = -0
+group_14;1584542931367890;-0.0252686
+main: groundSteering = -0.152941
+group_14;1584542931467762;-0.0252686
+main: groundSteering = -0
+group_14;1584542931568052;-0.138062
+main: groundSteering = -0
+group_14;1584542931668399;-0.0922852
+main: groundSteering = -0.290888
+group_14;1584542931769814;-0.00860596
+main: groundSteering = -0.290888
+group_14;1584542931868154;-0.110596
+main: groundSteering = -0.290888
+group_14;1584542931967822;-0.142822
+main: groundSteering = -0
+group_14;1584542932067654;-0.16095
+main: groundSteering = -0
+group_14;1584542932167939;-0.0814819
+main: groundSteering = -0.014994
+group_14;1584542932269889;-0.020874
+main: groundSteering = -0.290888
+group_14;1584542932367682;-0.0283813
+main: groundSteering = -0
+group_14;1584542932467890;-0.110046
+main: groundSteering = -0
+group_14;1584542932567630;-0.0140991
+main: groundSteering = -0.104958
+group_14;1584542932668291;-0.0122681
+main: groundSteering = -0.0989571
+group_14;1584542932769855;-0.0547485
+main: groundSteering = -0
+group_14;1584542932867646;-0.110229
+main: groundSteering = -0
+group_14;1584542932967485;-0.0296631
+main: groundSteering = -0
+group_14;1584542933067674;-0.0214233
+main: groundSteering = -0.0599762
+group_14;1584542933167631;0.0130005
+main: groundSteering = -0
+group_14;1584542933269606;-0.0490723
+main: groundSteering = -0
+group_14;1584542933367577;-0.0254517
+main: groundSteering = -0
+group_14;1584542933467397;-0.020874
+main: groundSteering = 0.0120023
+group_14;1584542933567486;-0.00640869
+main: groundSteering = 0.290888
+group_14;1584542933567486;-0.00952148
+main: groundSteering = 0.290888
+group_14;1584542933668186;0.00915527
+main: groundSteering = 0.290888
+group_14;1584542933769426;0.0358887
+main: groundSteering = -0
+group_14;1584542933867690;0.0789185
+main: groundSteering = -0
+group_14;1584542933968358;0.0291138
+main: groundSteering = 0.290888
+group_14;1584542934067248;-0.0128174
+main: groundSteering = 0.290888
+group_14;1584542934167357;0.0726929
+main: groundSteering = 0.257917
+group_14;1584542934269825;0.162415
+main: groundSteering = -0
+group_14;1584542934368068;0.177612
+main: groundSteering = 0.272911
+group_14;1584542934467313;0.0556641
+main: groundSteering = 0.290888
+group_14;1584542934567479;0.0682983
+main: groundSteering = 0.290888
+group_14;1584542934668053;0.206177
+main: groundSteering = -0
+group_14;1584542934769194;0.171753
+main: groundSteering = -0
+group_14;1584542934867295;0.0878906
+main: groundSteering = 0.188939
+group_14;1584542934867295;0.0878906
+main: groundSteering = 0.188939
+group_14;1584542934967105;0.0205078
+main: groundSteering = 0.290888
+group_14;1584542935067119;0.126892
+main: groundSteering = -0
+group_14;1584542935167288;0.172852
+main: groundSteering = -0
+group_14;1584542935269033;0.0811157
+main: groundSteering = 0.0150029
+group_14;1584542935367174;-0.00128174
+main: groundSteering = 0.125962
+group_14;1584542935467399;-0.0461426
+main: groundSteering = 0.137956
+group_14;1584542935567148;0.0695801
+main: groundSteering = 0.137956
+group_14;1584542935667609;0.107849
+main: groundSteering = 0.134955
+group_14;1584542935769142;0.119385
+main: groundSteering = 0.143957
+group_14;1584542935866931;0.140625
+main: groundSteering = 0.0659773
+group_14;1584542935967125;0.0734253
+main: groundSteering = -0
+group_14;1584542936067183;0.0254517
+main: groundSteering = -0
+group_14;1584542936166853;-0.0855103
+main: groundSteering = -0
+group_14;1584542936269004;-0.0975952
+main: groundSteering = 0.0749791
+group_14;1584542936367017;-0.0393677
+main: groundSteering = 0.122962
+group_14;1584542936466799;0.0238037
+main: groundSteering = -0
+group_14;1584542936569407;0.00567627
+main: groundSteering = -0
+group_14;1584542936667626;0.0111694
+main: groundSteering = -0
+group_14;1584542936768923;0.00201416
+main: groundSteering = -0
+group_14;1584542936867107;0.00146484
+main: groundSteering = -0
+group_14;1584542936967028;0.000915527
+main: groundSteering = -0
+group_14;1584542937066820;-0.00769043
+main: groundSteering = -0
+group_14;1584542937166699;0.00201416
+main: groundSteering = -0
+group_14;1584542937269144;0.00109863
+main: groundSteering = -0
+group_14;1584542937369860;0.00109863
+main: groundSteering = -0
+group_14;1584542937469392;0.00109863
+main: groundSteering = -0
+group_14;1584542937566871;0.00146484
+main: groundSteering = -0
+group_14;1584542937667397;0.00164795
+main: groundSteering = -0
+group_14;1584542937768623;0.00201416
+main: groundSteering = -0
+group_14;1584542937867095;0.00109863
+main: groundSteering = -0
+group_14;1584542937966909;-0.00256348
+main: groundSteering = -0
+group_14;1584542938066752;-0.000732422
+main: groundSteering = -0
+group_14;1584542938166651;0.00402832
+main: groundSteering = -0
+group_14;1584542938272357;0.00256348
+main: groundSteering = -0
+group_14;1584542938369411;0.00439453
+main: groundSteering = -0
+group_14;1584542938469019;-0.000732422
+main: groundSteering = -0
+group_14;1584542938569185;0.00201416
+main: groundSteering = -0
+group_14;1584542938667128;0.00128174
+main: groundSteering = -0
+group_14;1584542938768775;0.00146484
+main: groundSteering = -0
+group_14;1584542938866604;0.00146484
+main: groundSteering = -0
+group_14;1584542938966611;0.00109863
+main: groundSteering = -0
+group_14;1584542939066814;0.00146484
+main: groundSteering = -0
+group_14;1584542939166421;0.000915527
+main: groundSteering = -0
+group_14;1584542901976078;0.00128174
+main: groundSteering = -0
+group_14;1584542902674047;0.00146484
+main: groundSteering = -0
+group_14;1584542902775615;0.00109863
+main: groundSteering = -0
+group_14;1584542902875941;0.00146484
+main: groundSteering = -0
+group_14;1584542902973341;0.00201416
+main: groundSteering = -0
+group_14;1584542903073559;0.00146484
+main: groundSteering = -0
+group_14;1584542903173470;0.00109863
+main: groundSteering = -0
+group_14;1584542903275335;0.000915527
+main: groundSteering = -0
+group_14;1584542903373892;0.00128174
+main: groundSteering = -0
+group_14;1584542903473243;0.000915527
+main: groundSteering = -0
+group_14;1584542903573217;0.00109863
+main: groundSteering = -0
+group_14;1584542903676744;0.00146484
+main: groundSteering = -0
+group_14;1584542903676744;0.00146484
+main: groundSteering = -0
+group_14;1584542903775273;0.00128174
+main: groundSteering = -0
+group_14;1584542903873423;0.00549316
+main: groundSteering = -0
+group_14;1584542903973577;0.00897217
+main: groundSteering = -0
+group_14;1584542904073153;-0.0119019
+main: groundSteering = -0
+group_14;1584542904173174;0.00476074
+main: groundSteering = -0
+group_14;1584542904275508;-0.013916
+main: groundSteering = -0
+group_14;1584542904373184;-0.0111694
+main: groundSteering = -0
+group_14;1584542904373184;-0.0111694
+main: groundSteering = -0
+group_14;1584542904475625;-0.003479
+main: groundSteering = -0
+group_14;1584542904573379;-0.00439453
+main: groundSteering = -0
+group_14;1584542904673871;-0.015564
+main: groundSteering = 0.0719785
+group_14;1584542904775115;-0.000915527
+main: groundSteering = 0.0719785
+group_14;1584542904873158;0.0379028
+main: groundSteering = 0.0719785
+group_14;1584542904978991;0.0402832
+main: groundSteering = 0.0719785
+group_14;1584542905073144;0.0342407
+main: groundSteering = 0.0719785
+group_14;1584542905173099;0.0217896
+main: groundSteering = 0.0719785
+group_14;1584542905279460;0.0472412
+main: groundSteering = 0.0719785
+group_14;1584542905376973;0.0785522
+main: groundSteering = 0.0749791
+group_14;1584542905473325;0.0800171
+main: groundSteering = 0.149949
+group_14;1584542905572814;0.182373
+main: groundSteering = 0.149949
+group_14;1584542905673642;0.191162
+main: groundSteering = 0.131955
+group_14;1584542905775478;0.21
+main: groundSteering = 0.0929737
+group_14;1584542905872995;0.21
+main: groundSteering = 0.0659773
+group_14;1584542905972813;0.181091
+main: groundSteering = 0.0599851
+group_14;1584542905972813;0.181091
+main: groundSteering = 0.0599851
+group_14;1584542906072914;0.119202
+main: groundSteering = 0.0569845
+group_14;1584542906175966;0.0913696
+main: groundSteering = 0.0569845
+group_14;1584542906275501;0.0767212
+main: groundSteering = 0.0749791
+group_14;1584542906373155;0.103455
+main: groundSteering = 0.0749791
+group_14;1584542906472786;0.0697632
+main: groundSteering = 0.0779797
+group_14;1584542906572935;0.0745239
+main: groundSteering = 0.0779797
+group_14;1584542906673772;0.0829468
+main: groundSteering = 0.0779797
+group_14;1584542906774913;0.0536499
+main: groundSteering = 0.0779797
+group_14;1584542906872686;0.0562134
+main: groundSteering = 0.101967
+group_14;1584542906972834;0.0567627
+main: groundSteering = 0.11396
+group_14;1584542907072776;0.0580444
+main: groundSteering = 0.110968
+group_14;1584542907172555;0.0613403
+main: groundSteering = 0.11396
+group_14;1584542907274935;0.0741577
+main: groundSteering = 0.110968
+group_14;1584542907372737;0.0849609
+main: groundSteering = 0.110968
+group_14;1584542907472599;0.0910034
+main: groundSteering = 0.110968
+group_14;1584542907573295;0.079834
+main: groundSteering = 0.110968
+group_14;1584542907676450;0.0966797
+main: groundSteering = 0.110968
+group_14;1584542907775069;0.118469
+main: groundSteering = -0
+group_14;1584542907872893;0.06427
+main: groundSteering = -0
+group_14;1584542907972860;0.0536499
+main: groundSteering = -0
+group_14;1584542908072412;0.0210571
+main: groundSteering = -0
+group_14;1584542908172598;0.00805664
+main: groundSteering = -0.113951
+group_14;1584542908275075;-0.0474243
+main: groundSteering = -0
+group_14;1584542908372625;-0.0626221
+main: groundSteering = -0.0179858
+group_14;1584542908472654;-0.0633545
+main: groundSteering = -0.0509744
+group_14;1584542908572519;-0.0514526
+main: groundSteering = -0
+group_14;1584542908673095;-0.0472412
+main: groundSteering = -0
+group_14;1584542908774540;-0.02948
+main: groundSteering = -0
+group_14;1584542908774540;-0.02948
+main: groundSteering = -0
+group_14;1584542908873035;-0.0210571
+main: groundSteering = -0.0899643
+group_14;1584542908972983;-0.024353
+main: groundSteering = -0.143948
+group_14;1584542909072821;-0.111511
+main: groundSteering = -0.143948
+group_14;1584542909172487;-0.154541
+main: groundSteering = -0.179929
+group_14;1584542909275191;-0.136597
+main: groundSteering = -0.0899643
+group_14;1584542909372678;-0.130005
+main: groundSteering = -0.0899643
+group_14;1584542909472096;-0.132202
+main: groundSteering = -0
+group_14;1584542909572446;-0.0379028
+main: groundSteering = -0
+group_14;1584542909672895;-0.0353394
+main: groundSteering = -0
+group_14;1584542909774217;-0.0203247
+main: groundSteering = -0
+group_14;1584542909871989;-0.0137329
+main: groundSteering = -0.0239869
+group_14;1584542909972127;-0.0221558
+main: groundSteering = -0.14694
+group_14;1584542910071965;-0.132385
+main: groundSteering = -0
+group_14;1584542910171937;-0.0373535
+main: groundSteering = -0
+group_14;1584542910274253;-0.003479
+main: groundSteering = -0
+group_14;1584542910371900;-0.00238037
+main: groundSteering = -0
+group_14;1584542910471906;-0.00769043
+main: groundSteering = 0.146949
+group_14;1584542910572090;0.159485
+main: groundSteering = -0
+group_14;1584542910672539;0.102722
+main: groundSteering = -0
+group_14;1584542910773997;0.0106201
+main: groundSteering = -0
+group_14;1584542910872002;0.0302124
+main: groundSteering = 0.161943
+group_14;1584542910971908;0.142822
+main: groundSteering = 0.143957
+group_14;1584542911072029;0.186584
+main: groundSteering = 0.0929737
+group_14;1584542911171945;0.135498
+main: groundSteering = 0.0569845
+group_14;1584542911171945;0.135498
+main: groundSteering = 0.0569845
+group_14;1584542911277650;0.0944824
+main: groundSteering = 0.0269964
+group_14;1584542911372417;0.046875
+main: groundSteering = 0.0179946
+group_14;1584542911471938;0.0265503
+main: groundSteering = 0.0120023
+group_14;1584542911571664;0.0137329
+main: groundSteering = 0.0599851
+group_14;1584542911672751;0.0567627
+main: groundSteering = 0.0809714
+group_14;1584542911774742;0.0734253
+main: groundSteering = 0.0899731
+group_14;1584542911871626;0.114624
+main: groundSteering = 0.206934
+group_14;1584542911971804;0.21
+main: groundSteering = 0.236922
+group_14;1584542912074268;0.21
+main: groundSteering = 0.242914
+group_14;1584542912171933;0.21
+main: groundSteering = 0.0959743
+group_14;1584542912273797;0.21
+main: groundSteering = 0.0179946
+group_14;1584542912371724;0.12323
+main: groundSteering = -0
+group_14;1584542912471506;0.0322266
+main: groundSteering = 0.0120023
+group_14;1584542912571466;-0.00292969
+main: groundSteering = 0.0509833
+group_14;1584542912672387;0.0274658
+main: groundSteering = 0.0509833
+group_14;1584542912773661;0.0402832
+main: groundSteering = 0.00300058
+group_14;1584542912871571;0.0221558
+main: groundSteering = 0.0239958
+group_14;1584542912971582;0.00933838
+main: groundSteering = 0.029997
+group_14;1584542913071420;0.0267334
+main: groundSteering = 0.0120023
+group_14;1584542913171331;0.0298462
+main: groundSteering = -0
+group_14;1584542913273678;0.0270996
+main: groundSteering = -0
