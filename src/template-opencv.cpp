@@ -20,7 +20,7 @@
 // Include the OpenDLV Standard Message Set that contains messages that are usually exchanged for automotive or robotic applications 
 #include "opendlv-standard-message-set.hpp"
 
-#include "algorithm/algorithm.hpp"
+#include "algorithm/algorithm.hpp" // Includes the algorithm header file
 #include "ConeDetector/ConeDetector.hpp" // Add this include for cone detection
 
 // Include the GUI and image processing header files from OpenCV
@@ -28,8 +28,8 @@
 #include <opencv2/imgproc/imgproc.hpp>
 #include <iostream> // Gives commands like cout for input and output
 #include <mutex> // For thread saftey to keep recources safe
-#include <sstream>
-#include <ctime>
+#include <sstream> // Stream class to convert data types to strings
+#include <ctime> //  For time related functions
 
 int32_t main(int32_t argc, char **argv) {
     int32_t retCode{1};
@@ -54,7 +54,7 @@ int32_t main(int32_t argc, char **argv) {
         const uint32_t HEIGHT{static_cast<uint32_t>(std::stoi(commandlineArguments["height"]))};
         const bool VERBOSE{commandlineArguments.count("verbose") != 0};
 
-        // Attach to the shared memory.
+        // Attach to the shared memory to enable fetching in real-time the vechiles image frames
         std::unique_ptr<cluon::SharedMemory> sharedMemory{new cluon::SharedMemory{NAME}};
         if (sharedMemory && sharedMemory->valid()) {
             std::clog << argv[0] << ": Attached to shared memory '" << sharedMemory->name() << " (" << sharedMemory->size() << " bytes)." << std::endl;
@@ -64,9 +64,9 @@ int32_t main(int32_t argc, char **argv) {
             cluon::OD4Session od4{static_cast<uint16_t>(std::stoi(commandlineArguments["cid"]))};
 
             opendlv::proxy::GroundSteeringRequest gsr;
-            opendlv::proxy::AngularVelocityReading avr;
+            opendlv::proxy::AngularVelocityReading avr; // Creates object of type AngularVelocityReading from the OpenDLV message set
             std::mutex gsrMutex;
-            std::mutex avrMutex;
+            std::mutex avrMutex; // creates a mutex to protect the access to the AngularVelocityReading object
             auto onGroundSteeringRequest = [&gsr, &gsrMutex](cluon::data::Envelope &&env){
                 // The envelope data structure provide further details, such as sampleTimePoint as shown in this test case:
                 // https://github.com/chrberger/libcluon/blob/master/libcluon/testsuites/TestEnvelopeConverter.cpp#L31-L40
@@ -74,8 +74,13 @@ int32_t main(int32_t argc, char **argv) {
                 gsr = cluon::extractMessage<opendlv::proxy::GroundSteeringRequest>(std::move(env));
         
             };
+            // Defines the function and uses the avr and avr mutex objects to access the AngularVelocityReading message
+            // The Envelope is a container that holds the wanted message
+            // the && menas that the that the env is allowed to be moved, which is more efficient than copying
             auto onAngularVelocityReading = [&avr, &avrMutex](cluon::data::Envelope &&env) {
-                std::lock_guard<std::mutex> lck(avrMutex);
+                // locks the mutex to prevent mismatched acces to the AngularVelocityReading object
+                std::lock_guard<std::mutex> lck(avrMutex); 
+                // Extracts the AngularVelocityReading message from the envelope and stores it in the avr object
                 avr = cluon::extractMessage<opendlv::proxy::AngularVelocityReading>(std::move(env));
             };
 
@@ -86,7 +91,7 @@ int32_t main(int32_t argc, char **argv) {
             while (od4.isRunning()) {
                 // OpenCV data structure to hold an image.
                 cv::Mat img;
-                //Get the angular velocity
+                //Initialize the angularVelocityZ to 0.0
                 double angularVelocityZ = 0.0;
                 // Wait for a notification of a new frame.
                 sharedMemory->wait();
@@ -96,23 +101,37 @@ int32_t main(int32_t argc, char **argv) {
                 {
                     // Copy the pixels from the shared memory into our own data structure.
                     cv::Mat wrapped(HEIGHT, WIDTH, CV_8UC4, sharedMemory->data());
-                    img = wrapped.clone();
+                    img = wrapped.clone(); // Creates a copy to ensure that the image is not modified while its being processed
 
                     
+                    
                     {
-                        std::lock_guard<std::mutex> lck(avrMutex);
-                        angularVelocityZ = avr.angularVelocityZ();
+                        std::lock_guard<std::mutex> lck(avrMutex); // locks mutex again
+                        angularVelocityZ = avr.angularVelocityZ(); // Reads the latest anuglar velocity fromt the avr object
                     }
                  
-                    // Detect cones in the image
+                    // Passes the cloned image to the cone detection function
                     ConePositions cones = detectCones(img);
 
                     // Calculate steering angle
                     double steeringAngle = calculateSteeringWheelAngle(angularVelocityZ);
 
-                    unsigned long long int frameTimeStamp = static_cast<unsigned long long int>(cluon::time::toMicroseconds(sharedMemory->getTimeStamp().second) );
-                    std::cout << "group_14;" << frameTimeStamp << ";" << steeringAngle << std::endl;
+                    // Gets the frame time stamp from the shared memory and prints it to the console along 
+                    // with the result from the calculateSteeringWheelAngle function
+                    unsigned long long int frameTimeStamp = static_cast<unsigned long long int>( // converts the value to unsigned long long integer
+                        cluon::time::toMicroseconds( // converts the time stamp to microseconds
+                            sharedMemory->getTimeStamp().second // Returns the timestamp for the current image frame
+                        ) 
+                    );
+                    std::cout // Prints the following information to the console
+                    << "group_14;" // Groud id
+                    << frameTimeStamp << ";" // Frame tike stamp in microseconds
+                    << steeringAngle // Prints the current calculated steering angle
+                    << std::endl; // ends and clears the output buffer
+         
                 }
+
+
                 // TODO: Here, you can add some code to check the sampleTimePoint when the current frame was captured.
                 sharedMemory->unlock();
 
@@ -123,7 +142,7 @@ int32_t main(int32_t argc, char **argv) {
                 // If you want to access the latest received ground steering, don't forget to lock the mutex:
                 {
                     std::lock_guard<std::mutex> lck(gsrMutex);
-                    // std::cout << "main: groundSteering = " << gsr.groundSteering() << std::endl;
+                    std::cout << "main: groundSteering = " << gsr.groundSteering() << std::endl;
                 }
 
                 // Display image on your screen.
