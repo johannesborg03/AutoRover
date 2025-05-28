@@ -134,8 +134,7 @@ int32_t main(int32_t argc, char **argv) {
 
                 // TODO: Here, you can add some code to check the sampleTimePoint when the current frame was captured.
                 sharedMemory->unlock();
-
-                // TODO: Do something with the frame.
+                
                 // Example: Draw a red rectangle and display image.
                 cv::rectangle(img, cv::Point(50, 50), cv::Point(100, 100), cv::Scalar(0,0,255));
 
