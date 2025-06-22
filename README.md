@@ -20,7 +20,12 @@
 ---
 
 ## Project Overview
-This project is developed as part of the DIT638 course at Chalmers University. It demonstrates real-time cone detection and steering angle computation for autonomous vehicles using computer vision (OpenCV) and the OpenDLV platform. The system processes shared memory images, detects cones, computes steering angles, and logs results for evaluation.
+
+![Sample Picture](images/sample_pic.png)
+
+This project is developed as part of the DIT638 course at Gothenburg and Chalmers University. It demonstrates real-time cone detection and steering angle computation for autonomous vehicles using computer vision (OpenCV) and the OpenDLV platform. The system processes shared memory images, detects cones, computes steering angles, and logs results for evaluation.
+
+
 
 ---
 
