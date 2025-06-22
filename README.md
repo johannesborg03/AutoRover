@@ -14,7 +14,6 @@
 - [Data Analysis & Evaluation](#data-analysis--evaluation)
 - [Project Structure](#project-structure)
 - [Development Workflow](#development-workflow)
-- [Contributing](#contributing)
 - [Authors & Acknowledgments](#authors--acknowledgments)
 - [License](#license)
 
