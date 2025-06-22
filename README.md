@@ -2,8 +2,6 @@
 
 **Members:** Lilly Heier, Daniel Norberg, Erik Gabrielsson, Johannes Borg
 
-## Badges
-
 ## Table of Contents
 - [Project Overview](#project-overview)
 - [Features](#features)
