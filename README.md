@@ -137,18 +137,6 @@ It is only temporary and only exists in the CI-run.
 - **Docker Compose:**
   See `src/recordings/docker-compose.yaml` for integration with video replay and shared memory.
 
-## Add your files
-
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
-
-```
-cd existing_repo
-git remote add origin https://git.chalmers.se/courses/dit638/students/2025-group-14.git
-git branch -M main
-git push -uf origin main
-```
-
 ---
 
 ## Data Analysis & Evaluation
