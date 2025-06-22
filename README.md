@@ -1,6 +1,8 @@
-# 2025-group-14: Autonomous Cone Detection & Steering Control
+# AutoRover 
 
-**Members:** Lilly Heier, Daniel Norberg, Erik Gabrielsson, Johannes Borg
+## 2025-group-14: Autonomous Cone Detection & Steering Control   
+
+**Members:** Johannes Borg, Daniel Norberg, Erik Gabrielsson, Lilly Heier
 
 ## Table of Contents
 - [Project Overview](#project-overview)
